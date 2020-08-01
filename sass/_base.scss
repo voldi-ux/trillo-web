@@ -1,0 +1,113 @@
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+
+@font-face {
+  font-family: "lato";
+  src: url(../fonts/Lato-Regular.ttf);
+}
+
+@mixin responsive($device) {
+  @if ($device == tablet) {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+
+  @if ($device == tablet-port) {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if ($device == phone) {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+}
+
+:root {
+  --primary: #eb2f64;
+  --primary-light: #ff3366;
+  --primary-dark: #ba265d;
+
+  --grey-light-1: #faf9f9;
+  --grey-light-2: #f4f2f2;
+  --grey-light-3: #f0eeee;
+  --grey-light-4: #ccc;
+
+  --grey-dark-1: #333;
+  --grey-dark-2: #777;
+  --grey-dark-3: #999;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 63.5%;
+  @include responsive(tablet) {
+    font-size: 56%;
+  }
+  @include responsive(tablet-port) {
+    font-size: 50%;
+  }
+  @include responsive(phone) {
+    font-size: 45%;
+  }
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--primary-dark)
+  );
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 10rem;
+
+  // display: flex;
+  // align-items: center;
+
+  @include responsive(phone) {
+    padding: 0;
+  }
+  font-family: lato;
+  * p {
+    line-height: 3rem;
+  }
+}
+
+// media queries
+
+// tablet max 9000px
+//tablet-portrait max 1200px
+//phone max 600px

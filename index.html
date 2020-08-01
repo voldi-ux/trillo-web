@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="logo" class="logo" />
+
+        <form action="#" class="search">
+          <input type="text" class="search_input" placeholder="search" />
+
+          <button class="search-button">
+            <svg class="search_icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="top-nav">
+          <span class="top-nav_box">
+            <svg class="top-nav_icon">
+              <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="top-nav-notification">
+              7
+            </span>
+          </span>
+          <span class="top-nav_box">
+            <svg class="top-nav_icon">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="top-nav-notification">
+              30
+            </span>
+          </span>
+          <span class="top-nav_user top-nav_box">
+            <img src="img/user.jpg" alt="" class="top-nav_user-img" />
+            <span class="top-nav_user-name">
+              john
+            </span>
+          </span>
+        </nav>
+      </header>
+
+      <main class="main">
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation_item">
+              <a href="#" class="navigation_link navigation_link_active">
+                <svg class="navigation_icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+                Hotel
+              </a>
+            </li>
+            <li class="navigation_item">
+              <a href="#" class="navigation_link">
+                <svg class="navigation_icon">
+                  <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                </svg>
+                flight
+              </a>
+            </li>
+            <li class="navigation_item">
+              <a href="#" class="navigation_link">
+                <svg class="navigation_icon">
+                  <use xlink:href="img/sprite.svg#icon-key"></use>
+                </svg>
+                Car rental
+              </a>
+            </li>
+            <li class="navigation_item">
+              <a href="#" class="navigation_link">
+                <svg class="navigation_icon">
+                  <use xlink:href="img/sprite.svg#icon-map"></use>
+                </svg>
+                Tours
+              </a>
+            </li>
+          </ul>
+          <div class="navigation_footer">
+            <p class="navigation_copyright">
+              &copy;2078 all rights reserved
+            </p>
+          </div>
+        </nav>
+
+        <div class="content">
+          <div class="gallary">
+            <div class="gallary_item">
+              <img src="img/hotel-1.jpg" alt="photo" class="gallary_img" />
+            </div>
+            <div class="gallary_item">
+              <img
+                src="img/hotel-2.jpg"
+                alt="hotel photo"
+                class="gallary_img"
+              />
+            </div>
+            <div class="gallary_item">
+              <img
+                src="img/hotel-3.jpg"
+                alt="hotel photo"
+                class="gallary_img"
+              />
+            </div>
+          </div>
+          <div class="review">
+            <h2 class="review_heading">
+              Desperado hotel
+            </h2>
+            <div class="review_star">
+              <svg class="review_icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="review_icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="review_icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="review_icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="review_icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+            <div class="review_location">
+              <svg class="review_location-icon">
+                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <button class="btn btn_inline btn_review">
+                Portugal, San Diago
+              </button>
+            </div>
+
+            <div class="review_rating">
+              <h3 class="review_rating_ratio">
+                8.5
+              </h3>
+              <h4 class="review_rating_votes">
+                475 votes
+              </h4>
+            </div>
+          </div>
+          <div class="main-content">
+            <main class="hotel_detail">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                assumenda, expedita error et dignissimos facere explicabo
+                voluptatibus fuga. Animi, facere!
+              </p>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                assumenda, expedita error et dignissimos facere
+              </p>
+              <ul class="hotel_detail_list">
+                <li class="hotel_detail_list-item">
+                  Free transport to town
+                </li>
+                <li class="hotel_detail_list-item">
+                  close to the beach
+                </li>
+                <li class="hotel_detail_list-item">
+                  Perfect view of the sea
+                </li>
+                <li class="hotel_detail_list-item">
+                  High quality rooms
+                </li>
+                <li class="hotel_detail_list-item">
+                  Perfect for families
+                </li>
+                <li class="hotel_detail_list-item">
+                  Free wifi
+                </li>
+                <li class="hotel_detail_list-item">
+                  Huge bedrooms
+                </li>
+                <li class="hotel_detail_list-item">
+                  pets allowed
+                </li>
+              </ul>
+              <aside class="recomended">
+                <p class="recomended_count">
+                  Lucy and 3 others recomended this hotel
+                </p>
+                <figure class="recomended_user">
+                  <img src="img/user-1.jpg" alt="" class="recomended_photo" />
+                  <img src="img/user-2.jpg" alt="" class="recomended_photo" />
+                  <img src="img/user-3.jpg" alt="" class="recomended_photo" />
+                </figure>
+              </aside>
+            </main>
+            <div class="comments">
+              <aside class="user-comment">
+                <p class="user-comment_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium, corporis quod. Aperiam quisquam voluptas minus
+                  earum. Enim adipisci consequatur natus!
+                </p>
+
+                <div class="user-comment_box">
+                  <img
+                    src="img/user-5.jpg"
+                    alt="user"
+                    class="user-comment_box_img"
+                  />
+                  <div class="user-comment_box_detail">
+                    <h3 class="user-comment_box_name">
+                      Merry Smith
+                    </h3>
+                    <h3 class="user-comment_box_date">
+                      Jan 24 2020
+                    </h3>
+                  </div>
+                  <p class="user-comment_box_rating">
+                    7.5
+                  </p>
+                </div>
+              </aside>
+              <aside class="user-comment">
+                <p class="user-comment_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium, corporis quod. Aperiam quisquam voluptas minus
+                  earum. Enim adipisci consequatur natus!
+                </p>
+
+                <div class="user-comment_box">
+                  <img
+                    src="img/user-6.jpg"
+                    alt="user"
+                    class="user-comment_box_img"
+                  />
+                  <div class="user-comment_box_detail">
+                    <h3 class="user-comment_box_name">
+                      Jack Mafia
+                    </h3>
+                    <h3 class="user-comment_box_date">
+                      Aug 14 2020
+                    </h3>
+                  </div>
+                  <p class="user-comment_box_rating">
+                    9
+                  </p>
+                </div>
+              </aside>
+              <button class="btn btn_inline">
+                Read more
+                <span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+          <section class="cta">
+            <h1 class="cta_heading">
+              good news we have 4 rooms left for you
+            </h1>
+            <button class="cta_btn">
+              <span class="visible">
+                BOOK now
+              </span>
+              <span class="invisible">
+              only 4 rooms left
+              </span>
+            </button>
+          </section>
+        </div>
+
+       
+      </main>
+     
+    </div>
+  </body>
+</html>
